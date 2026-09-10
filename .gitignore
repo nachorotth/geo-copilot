@@ -1,0 +1,156 @@
+# ==============================================================================
+# .gitignore — GEO-Copilot Repository Exclusion & Noise Quarantine Plane
+# Authority: Smithers (HarnessArchitect)
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# 1. Dependencies & Package Managers
+# ------------------------------------------------------------------------------
+node_modules/
+**/node_modules/
+/.pnp
+.pnp.js
+.npm/
+.yarn/
+.pnpm-store/
+.opencode/node_modules/
+
+# ------------------------------------------------------------------------------
+# 2. Build Artifacts, Output Directories & Compilation Caches
+# ------------------------------------------------------------------------------
+.next/
+**/.next/
+out/
+**/out/
+build/
+**/build/
+dist/
+**/dist/
+target/
+coverage/
+**/coverage/
+.turbo/
+**/.turbo/
+.swc/
+*.tsbuildinfo
+**/*.tsbuildinfo
+next-env.d.ts
+apps/web/next-env.d.ts
+
+# ------------------------------------------------------------------------------
+# 3. Critical Security, Secrets & Environment
+# ------------------------------------------------------------------------------
+.env
+.env.*
+.env*.local
+*.env
+!.env.example
+*.pem
+*.key
+*.cert
+*.crt
+*.p12
+*.pfx
+*.keystore
+*.jks
+*.pkcs12
+*.token
+*.secret
+*credentials*.json
+service-account*.json
+
+# ------------------------------------------------------------------------------
+# 4. Agent Worktree Sandboxes & Harness Internal Infrastructure
+# ------------------------------------------------------------------------------
+AGENTS.md
+.github/instructions/
+.worktrees/
+**/.worktrees/
+.harness/
+.agents/
+.gemini/
+.opencode/
+scratch/
+scratch_bundle/
+scratch_bundle.zip
+
+# ------------------------------------------------------------------------------
+# 5. Code Dumps, Large Context Bundles, Zips & Repomix Outputs
+# ------------------------------------------------------------------------------
+repomix-output.*
+repomix-output.xml
+repomix.config.json
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.rar
+*.7z
+*.gz
+
+# ------------------------------------------------------------------------------
+# 6. Impeccable Design Live State & Temporary Configs
+# ------------------------------------------------------------------------------
+.impeccable/
+impeccable.config.*
+*.impeccable.json
+impeccable-output.*
+
+# ------------------------------------------------------------------------------
+# 7. Playwright, Crawler Artifacts & Test Reports
+# ------------------------------------------------------------------------------
+test-results/
+playwright-report/
+blob-report/
+playwright/.cache/
+.nyc_output/
+junit.xml
+*.lcov
+
+# ------------------------------------------------------------------------------
+# 8. Local Docker, Development Overrides & Infrastructure
+# ------------------------------------------------------------------------------
+docker-compose.override.yml
+docker-compose.local.yml
+.docker/
+
+# ------------------------------------------------------------------------------
+# 9. IDE, Editor Configurations & Tooling Metadata
+# ------------------------------------------------------------------------------
+.vscode/
+!.vscode/extensions.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*.sublime-workspace
+*.sublime-project
+.fleet/
+.claude/
+.cursor/
+
+# ------------------------------------------------------------------------------
+# 10. Logs, Debug & OS Metadata
+# ------------------------------------------------------------------------------
+*.log
+**/*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+desktop.ini
+ehthumbs.db
+ehthumbs_vista.db
+[Nn]et[Hh]ood
+
+

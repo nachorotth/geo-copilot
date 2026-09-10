@@ -1,0 +1,37 @@
+{
+  "name": "@geo-copilot/cli",
+  "version": "0.1.0",
+  "description": "Zero-dependency terminal CLI for GEO-Copilot (Generative Engine Optimization)",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "bin": {
+    "geo-copilot": "./dist/index.js",
+    "geo": "./dist/index.js"
+  },
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": "./dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc --noEmit",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "@geo-copilot/artifact-gen": "workspace:*",
+    "@geo-copilot/crawler": "workspace:*",
+    "@geo-copilot/scorer": "workspace:*",
+    "@geo-copilot/somv-engine": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.5",
+    "typescript": "^5.7.3"
+  }
+}

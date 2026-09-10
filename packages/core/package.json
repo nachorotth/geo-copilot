@@ -1,0 +1,60 @@
+{
+  "name": "@geo-copilot/core",
+  "version": "0.1.0",
+  "description": "Core domain models, Zod validation schemas, scoring algorithms, and context compression engine for GEO-Copilot",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/geo-copilot/geo-copilot.git",
+    "directory": "packages/core"
+  },
+  "keywords": [
+    "geo",
+    "generative-engine-optimization",
+    "ai-search",
+    "llms-txt",
+    "somv",
+    "ai-crawler"
+  ],
+  "author": "GEO-Copilot Contributors",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "default": "./dist/index.js"
+    },
+    "./types": {
+      "types": "./dist/types/index.d.ts",
+      "import": "./dist/types/index.js",
+      "default": "./dist/types/index.js"
+    },
+    "./schemas": {
+      "types": "./dist/schemas/index.d.ts",
+      "import": "./dist/schemas/index.js",
+      "default": "./dist/schemas/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "!dist/*.test.*"
+  ],
+  "scripts": {
+    "build": "tsc --build",
+    "typecheck": "tsc --noEmit",
+    "test": "node --test dist/core.test.js",
+    "lint": "eslint src --ext .ts"
+  },
+  "dependencies": {
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.5",
+    "typescript": "^5.7.3"
+  }
+}
