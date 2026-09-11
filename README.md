@@ -96,6 +96,11 @@ Equip your AI assistant with **6 native GEO tools** by adding one block to your 
 }
 ```
 
+Or install via Smithery with one command:
+```bash
+npx -y @smithery/cli install @geo-copilot/mcp-server --client cursor
+```
+
 **Available tools:**
 
 | Tool | Description |

@@ -1,7 +1,20 @@
 {
   "name": "@geo-copilot/mcp-server",
   "version": "0.1.0",
+  "description": "Model Context Protocol (MCP) server for GEO-Copilot — AI search visibility & generative engine optimization tools",
   "license": "MIT",
+  "keywords": [
+    "mcp",
+    "mcp-server",
+    "model-context-protocol",
+    "geo",
+    "generative-engine-optimization",
+    "ai-search",
+    "llms-txt",
+    "json-ld",
+    "claude",
+    "cursor"
+  ],
   "publishConfig": {
     "access": "public"
   },
