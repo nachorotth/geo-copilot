@@ -9,5 +9,5 @@ startCommand:
   commandFunction: |-
     (config) => ({
       command: 'npx',
-      args: ['-y', '@geo-copilot/mcp-server']
+      args: ['-y', '@geo-copilot/mcp-server@latest']
     })

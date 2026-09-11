@@ -90,7 +90,7 @@ Equip your AI assistant with **6 native GEO tools** by adding one block to your 
   "mcpServers": {
     "geo-copilot": {
       "command": "npx",
-      "args": ["-y", "@geo-copilot/mcp-server"]
+      "args": ["-y", "@geo-copilot/mcp-server@latest"]
     }
   }
 }
